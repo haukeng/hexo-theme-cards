@@ -12,6 +12,9 @@
     <meta name="HandheldFriendly" content="True" >
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="<%- url_for(config.url) %><%= url_for(page.path).replace('index.html', '') %>" />
 
     <%- partial('./icon') %>
 
