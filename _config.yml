@@ -13,8 +13,27 @@
 head: 
   
   # 网站图标
-  favicon: /favicon.ico
-  
+  favicon:
+    # You should use a image/x-icon type icon and configure it here.
+    ico: 
+    # 16x16 png
+    small: 
+    # 32x32 png
+    medium: 
+    # 180x180 png
+    apple_touch_icon: 
+    # 192x192 png
+    large: 
+    # svg icon
+    safari_pinned_tab: 
+    
+    manifest: 
+    
+    browserconfig: 
+
+
+  color: '#ffffff'
+
   # 社交分享链接
   opengraph: 
     enable: true

@@ -1,6 +1,10 @@
 <!--icon-->
-<% if (theme.head.favicon) { %>
-    <link rel="shortcut icon" type='image/x-icon' href="<%- url_for(theme.head.favicon) %>">
-<% } else if (config.favicon) { %>
-    <link rel="shortcut icon" type='image/x-icon' href="<%- url_for(config.favicon) %>">
-<% } %>
+<link rel='icon' type='image/ico' href='<%- url_for(theme.head.favicon.ico) %>'>
+<link rel='apple-touch-icon' sizes='180x180' href='<%- url_for(theme.head.favicon.apple_touch_icon) %>'>
+<link rel='icon' type='image/png' sizes='192x192' href='<%- url_for(theme.head.favicon.large) %>'>
+<link rel='icon' type='image/png' sizes='32x32' href='<%- url_for(theme.head.favicon.medium) %>'>
+<link rel='icon' type='image/png' sizes='16x16' href='<%- url_for(theme.head.favicon.small) %>'>
+<link rel='mask-icon' color='#fafafa' href='<%- url_for(theme.head.favicon.safari_pinned_tab) %>'>
+<meta name='theme-color' id='theme-color' content='<%- url_for(theme.head.color) %>'>
+<link rel='manifest' href='<%- url_for(theme.head.favicon.manifest) %>'>
+<meta name="msapplication-config" content="<%- url_for(theme.head.favicon.browserconfig) %>">
