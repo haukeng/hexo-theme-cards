@@ -2,7 +2,7 @@
     <meta charset="utf-8">
 
     <% if (page.robots) { %>
-        <meta name="robots" content="<%- page.robots %>">
+        <meta name="robots" content="<%= page.robots %>">
     <% } %>
 
     <!-- 渲染优化 -->
@@ -27,8 +27,6 @@
     <%- partial('_plugins/highlight/highlight/source') %>
     <%- partial('_plugins/highlight/hljs/source') %>
     <%- partial('_plugins/highlight/prismjs/source') %>
-
-    <%- partial('_plugins/tag-plugins/note/source') %>
 
     <%- partial('_plugins/statistics/busuanzi/source') %>
 

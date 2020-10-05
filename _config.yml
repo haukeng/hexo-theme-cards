@@ -85,10 +85,10 @@ cover:
   # 显示在最上方 cover 处的站点名称
   sitename: Demo
 
-  # 若设置 logo，则优先使用 logo 代替 sitename
-  logo: 
+  # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename
+  avatar: 
   
-  # logo 下方的一句话介绍
+  # sitename/avatar 下方的一句话介绍
   description: Hi, nice to meet you!
 
 
@@ -364,14 +364,11 @@ footer:
 # ---------------------------------------------------------------
 
 # 图片懒加载插件
-# 你需要将 `lazyload` 配置项移至 站点配置文件 才能使相关配置生效！！！
 lazyload:
   enable: false
-  onlypost: false
   loadingImage: 
 
 # 站内搜索插件
-# 你需要将 `search` 配置项移至 站点配置文件 才能使相关配置生效！！！
 search:
   enable: false
   path: search.json
@@ -379,6 +376,12 @@ search:
 
 # note 标签插件
 note: false
+
+# fold 内容折叠插件
+fold: 
+  enable: true
+  summary:   # 默认摘要
+  motion: 
 
 # 图片点击放大插件
 fancybox: 
@@ -432,23 +435,23 @@ vendors:
 
   # tag-plugin note css
   # https://github.com/ChrAlpha/hexo-theme-cards
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.0/dist/css/style/note.min.css
-  # Version 1.0
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.1/dist/css/style/note.min.css
+  # Version 1.1
   note: 
 
   # Lazyload js
   # https://github.com/verlok/lazyload
-  # Version: 17.1.0
+  # Version: 17.1.2
   lazyload: 
   
   # back_to_top button
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.0/dist/js/b2t.min.js
-  # Version 1.0
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.1/dist/js/b2t.min.js
+  # Version 1.1
   back_to_top: 
 
   # local search plugin
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.0/dist/js/local-search.min.js
-  # Version 1.0
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.1/dist/js/local-search.min.js
+  # Version 1.1
   local_search: 
   
   # Valine comments system
@@ -474,6 +477,11 @@ vendors:
   # busuanzi counter js
   # https://busuanzi.ibruce.info
   busuanzi: 
+
+  # Artitalk js
+  # https://github.com/ArtitalkJS/Artitalk
+  # Version: 3.1.2
+  artitalk: 
   
   # jQuery js
   # https://github.com/jquery/jquery/
