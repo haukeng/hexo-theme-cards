@@ -100,13 +100,6 @@
     &:empty
         display none
 
-.post-footer__meta
-    font-size 14px
-    margin-top 1.5rem
-
-    &>:last-child
-        margin-bottom 0
-
 .post-tags__link
 .post-cats__link
     display inline-block
@@ -145,3 +138,59 @@
         color #947600
         margin 3px 1px 3px 1px
         padding 0
+        
+.license 
+    position relative
+    line-height 1.2
+    font-size 1rem
+    background #f5f5f5
+    color #4a4a4a
+    margin calc(var(--space) * -1)
+    margin-top 1.5rem
+    margin-bottom 1rem
+    overflow hidden
+    display block
+    padding 1.25em 1.5em
+    a 
+        text-decoration underline
+
+
+
+
+.license-meta-title,
+.license-title 
+    margin 0 0 .25rem
+
+
+.license-meta 
+    margin-top 1rem
+    display flex
+    align-items center
+    justify-content flex-start
+    flex-wrap wrap
+
+
+.license-meta-item 
+    margin 0 2rem 1em 0
+
+
+.license-link,
+.license-meta-title 
+    font-size .8rem
+
+
+
+
+.license-meta-text 
+    margin 0
+
+
+.license::after 
+    position absolute
+    background url(cc_logo.svg)
+    content ' '
+    height 200px
+    width 200px
+    right -40px
+    top -45px
+    opacity: .1
