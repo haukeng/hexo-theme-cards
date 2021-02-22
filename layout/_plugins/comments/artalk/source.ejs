@@ -1,17 +1,20 @@
-<% if (theme.comments.use === 'valine') { %>
+<% if (theme.comments.use === 'artalk') { %>
     <script>
         function loadComment() {
-            let e;
-            (e = document.createElement("script")).src = '<%= url_for(theme.vendors.valine || 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js') %>',
+            let e, i;
+            (e = document.createElement("script")).src = '<%= url_for(theme.vendors.artalk.js || 'https://cdn.jsdelivr.net/npm/artalk@1.0.6/dist/Artalk.js') %>',
             document.body.appendChild(e);
             e.onload = () => {
-                var valineConfig = <%- JSON.stringify(theme.comments.valine) %>;
-                valineConfig.el = '#valine_container';
-                for (var i in valineConfig) {
-                    if (valineConfig[i] === null) delete valineConfig[i];
+                var artalkConfig = <%- JSON.stringify(theme.comments.artalk) %>;
+                artalkConfig.el = '#artalk_thread';
+                for (var i in artalkConfig) {
+                    if (artalkConfig[i] === null) delete artalkConfig[i];
                 }
-                new Valine(valineConfig);
+                new Artalk(artalkConfig);
             };
+            (i = document.createElement("link")).rel = "stylesheet",
+            i.href = '<%= url_for(theme.vendors.artalk.css || 'https://cdn.jsdelivr.net/npm/artalk@1.0.6/dist/Artalk.css') %>',
+            document.head.appendChild(i);
         }
     
         var runningOnBrowser = typeof window !== "undefined";

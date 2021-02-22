@@ -6,7 +6,9 @@
 
 <%- partial('_plugins/fancybox/source') %> 
 
-<%- partial('_plugins/mathjax/source') %> 
+<%- partial('_plugins/math/mathjax/source') %> 
+
+<%- partial('_plugins/math/katex/source') %> 
 
 <%- partial('_plugins/tag-plugins/fold/source') %> 
 
@@ -22,12 +24,16 @@
     <%- partial('_plugins/comments/gitalk/source') %>
     
     <%- partial('_plugins/comments/gitment/source') %>
+
+    <%- partial('_plugins/comments/artalk/source') %>
     
     <%- partial('_plugins/comments/livere/source') %>
     
     <%- partial('_plugins/comments/changyan/source') %>
 
     <%- partial('_plugins/comments/wildfire/source') %>
+    
+    <%- partial('_plugins/comments/twikoo/source') %>
 <% } %>
 
 <%- partial('./custom') %>
