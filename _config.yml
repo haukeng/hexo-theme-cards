@@ -15,10 +15,9 @@ head:
   # 网站图标
   favicon:
     ico: 
-    small: 
-    medium: 
+    svg: 
     apple_touch_icon: 
-    safari_pinned_tab: 
+    manifest: 
   
   # 社交分享链接
   opengraph: 
